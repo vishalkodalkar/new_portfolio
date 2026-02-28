@@ -155,7 +155,7 @@ async function handleFormSubmit(e) {
   };
 
   try {
-    const response = await fetch("https://my-portfolio-po65.onrender.com/send-email", {
+    const response = await fetch("/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -6,77 +6,35 @@ const path = require("path");
 const app = express();
 
 /* ================= MIDDLEWARE ================= */
-
 app.use(express.json());
 
-/* ================= MAIL ================= */
-
-const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
-transporter.verify((err) => {
-  if (err) console.log("SMTP ERROR:", err);
-  else console.log("SMTP READY ✅");
-});
-
-/* ================= API ROUTE ================= */
-
+/* ================= API ROUTE FIRST ================= */
 app.post("/send-email", async (req, res) => {
-  console.log("API HIT ✅");
+  console.log("API HIT");
 
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
-    return res.status(400).json({
-      success: false,
-      error: "Missing fields",
-    });
+    return res.status(400).json({ success: false });
   }
 
   try {
-    await transporter.sendMail({
-      from: '"Advait Portfolio" <advaithk24@gmail.com>',
-      to: process.env.EMAIL_USER,
-      subject: `Portfolio Message from ${name}`,
-      html: `
-        <h3>${name}</h3>
-        <p>${email}</p>
-        <p>${message}</p>
-      `,
-    });
-
     res.json({ success: true });
-
   } catch (err) {
-    console.error("MAIL ERROR:", err);
-    res.status(500).json({
-      success: false,
-      error: err.message,
-    });
+    res.status(500).json({ success: false });
   }
 });
 
 /* ================= STATIC FILES ================= */
-
 app.use(express.static(path.join(__dirname)));
 
-/* ================= FALLBACK ================= */
-
-app.get("*", (req, res) => {
+/* ================= HOME ROUTE ================= */
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
 /* ================= SERVER ================= */
-
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
