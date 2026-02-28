@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-email-server",
+  "version": "1.0.0",
+  "description": "Email backend for Advait Kulkarni's portfolio contact form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^4.22.1",
+    "mongoose": "^8.20.0",
+    "nodemailer": "^6.10.1"
+  }
+}

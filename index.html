@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advait Kulkarni | Full Stack Developer & Cybersecurity Enthusiast</title>
+  <meta name="description"
+    content="Portfolio of Advait Kulkarni — Full Stack Developer & Cybersecurity Enthusiast. MCA graduate specialising in secure, efficient web applications and machine learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">AK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Advait Kulkarni</h1>
+        <p class="hero-role">
+          <span class="role-static">Full Stack Developer &amp;</span>
+          <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-tagline">Building secure, efficient, and user-friendly applications — from robust back-ends to
+          sleek front-ends, with a passion for cybersecurity.</p>
+        <div class="hero-socials">
+          <a href="https://github.com/advaitkulkarni" target="_blank" class="social-icon" title="GitHub"
+            id="github-link"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/advaitkulkarni" target="_blank" class="social-icon" title="LinkedIn"
+            id="linkedin-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:advait.h.k.1234@gmail.com" class="social-icon" title="Email" id="email-link"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary" id="get-in-touch-btn">Get In Touch</a>
+          <a href="#projects" class="btn-secondary" id="view-projects-btn">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <div class="hero-image-ring">
+          <img src="profile.jpg" alt="Advait Kulkarni" class="hero-image" id="hero-profile-img" />
+        </div>
+        <div class="hero-scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="about-bio">
+            Recent MCA graduate with a strong foundation in software development and cybersecurity. Passionate about
+            building secure, efficient, and user-friendly applications. My journey from BCA to MCA has equipped me with
+            comprehensive knowledge of full-stack development, programming paradigms, and security best practices.
+          </p>
+          <ul class="about-traits">
+            <li><i class="fas fa-circle-check"></i> Focused on writing clean, maintainable code</li>
+            <li><i class="fas fa-circle-check"></i> Strong analytical and problem-solving skills</li>
+            <li><i class="fas fa-circle-check"></i> Dedicated to continuous learning and growth</li>
+            <li><i class="fas fa-circle-check"></i> Team player with excellent communication skills</li>
+          </ul>
+        </div>
+        <div class="about-right">
+          <h3 class="card-title">Core Strengths</h3>
+          <div class="strengths-grid">
+            <div class="strength-card"><span>Focused</span></div>
+            <div class="strength-card"><span>Confident</span></div>
+            <div class="strength-card"><span>Honest</span></div>
+            <div class="strength-card"><span>Dedicated</span></div>
+          </div>
+          <div class="languages-card">
+            <h4>Languages</h4>
+            <div class="lang-tags">
+              <span class="lang-tag">Hindi</span>
+              <span class="lang-tag">English</span>
+              <span class="lang-tag">Kannada</span>
+              <span class="lang-tag">Marathi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills &amp; <span class="accent">Expertise</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="skill-filters" id="skillFilters">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="Language" id="filter-language">Languages</button>
+        <button class="filter-btn" data-filter="Framework" id="filter-framework">Frameworks</button>
+        <button class="filter-btn" data-filter="Database" id="filter-database">Databases</button>
+        <button class="filter-btn" data-filter="Frontend" id="filter-frontend">Frontend</button>
+        <button class="filter-btn" data-filter="Security" id="filter-security">Security</button>
+        <button class="filter-btn" data-filter="Tool" id="filter-tool">Tools</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+
+        <!-- Languages -->
+        <div class="skill-card" data-category="Language" style="--card-color:#f7df1e;">
+          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-category">Language</div>
+        </div>
+        <div class="skill-card" data-category="Language" style="--card-color:#3776ab;">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <div class="skill-name">Python</div>
+          <div class="skill-category">Language</div>
+        </div>
+        <div class="skill-card" data-category="Language" style="--card-color:#f89820;">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <div class="skill-name">Java</div>
+          <div class="skill-category">Language</div>
+        </div>
+        <div class="skill-card" data-category="Language" style="--card-color:#a8b9cc;">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <div class="skill-name">C</div>
+          <div class="skill-category">Language</div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-card" data-category="Framework" style="--card-color:#512bd4;">
+          <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="skill-name">.NET</div>
+          <div class="skill-category">Framework</div>
+        </div>
+        <div class="skill-card" data-category="Framework" style="--card-color:#61dafb;">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <div class="skill-name">React.js</div>
+          <div class="skill-category">Framework</div>
+        </div>
+        <div class="skill-card" data-category="Framework" style="--card-color:#339933;">
+          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+          <div class="skill-name">Node.js</div>
+          <div class="skill-category">Framework</div>
+        </div>
+        <div class="skill-card" data-category="Framework" style="--card-color:#888;">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <div class="skill-name">Express.js</div>
+          <div class="skill-category">Framework</div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card" data-category="Database" style="--card-color:#47a248;">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-name">MongoDB</div>
+          <div class="skill-category">Database</div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card" data-category="Frontend" style="--card-color:#e34f26;">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <div class="skill-name">HTML5</div>
+          <div class="skill-category">Frontend</div>
+        </div>
+        <div class="skill-card" data-category="Frontend" style="--card-color:#1572b6;">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill-name">CSS3</div>
+          <div class="skill-category">Frontend</div>
+        </div>
+        <div class="skill-card" data-category="Frontend" style="--card-color:#06b6d4;">
+          <div class="skill-icon"><i class="fas fa-wind"></i></div>
+          <div class="skill-name">Tailwind CSS</div>
+          <div class="skill-category">Frontend</div>
+        </div>
+
+        <!-- Security -->
+        <div class="skill-card" data-category="Security" style="--card-color:#00aadd;">
+          <div class="skill-icon"><i class="fas fa-wifi"></i></div>
+          <div class="skill-name">Wireshark</div>
+          <div class="skill-category">Security</div>
+        </div>
+        <div class="skill-card" data-category="Security" style="--card-color:#ef4444;">
+          <div class="skill-icon"><i class="fas fa-spider"></i></div>
+          <div class="skill-name">Burp Suite</div>
+          <div class="skill-category">Security</div>
+        </div>
+        <div class="skill-card" data-category="Security" style="--card-color:#10b981;">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="skill-name">Nmap</div>
+          <div class="skill-category">Security</div>
+        </div>
+        <div class="skill-card" data-category="Security" style="--card-color:#8b5cf6;">
+          <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+          <div class="skill-name">Metasploitable</div>
+          <div class="skill-category">Security</div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card" data-category="Tool" style="--card-color:#f05032;">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-name">Git</div>
+          <div class="skill-category">Tool</div>
+        </div>
+        <div class="skill-card" data-category="Tool" style="--card-color:#007acc;">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <div class="skill-name">VS Code</div>
+          <div class="skill-category">Tool</div>
+        </div>
+        <div class="skill-card" data-category="Tool" style="--card-color:#d04a02;">
+          <div class="skill-icon"><i class="fab fa-windows"></i></div>
+          <div class="skill-name">Windows</div>
+          <div class="skill-category">Tool</div>
+        </div>
+        <div class="skill-card" data-category="Tool" style="--card-color:#fcc624;">
+          <div class="skill-icon"><i class="fab fa-linux"></i></div>
+          <div class="skill-name">Linux</div>
+          <div class="skill-category">Tool</div>
+        </div>
+        <div class="skill-card" data-category="Tool" style="--card-color:#d83b01;">
+          <div class="skill-icon"><i class="fas fa-file-word"></i></div>
+          <div class="skill-name">Microsoft Office</div>
+          <div class="skill-category">Tool</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <div class="section-underline"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- 1 -->
+        <div class="project-card" id="project-resume-analyzer">
+          <div class="project-category-badge">AI Application</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">Resume Analyzer</h3>
+          <p class="project-desc">Smart web application that evaluates and analyzes resumes based on job descriptions
+            and industry requirements. Uses text processing to identify key skills, missing keywords, and overall
+            relevance to help optimize resumes for ATS systems and increase interview chances.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+              class="tag">JavaScript</span><span class="tag">NLP</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="project-card" id="project-rainfall">
+          <div class="project-category-badge">Machine Learning</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">Rainfall Prediction</h3>
+          <p class="project-desc">Machine learning system for predicting rainfall using logistic regression and advanced
+            data analysis. Includes data exploration, model training, and evaluation with comprehensive visualization.
+            Built for weather forecasting and agricultural planning applications.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">Jupyter Notebook</span><span
+              class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="project-card" id="project-face-recognition">
+          <div class="project-category-badge">AI Application</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">Face Recognition Attendance</h3>
+          <p class="project-desc">Automated attendance system using facial recognition technology. Features real-time
+            face detection, student/admin dashboards, attendance tracking, and Excel export functionality. Secure
+            authentication system with SQLite database integration.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Face Recognition</span><span
+              class="tag">HTML5</span><span class="tag">SQLite</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="project-card" id="project-mac-tool">
+          <div class="project-category-badge">Cybersecurity</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">MAC Address Intelligence Tool</h3>
+          <p class="project-desc">Cybersecurity utility for analyzing, validating, and auditing MAC addresses in network
+            environments. Features vendor identification using OUI, duplicate detection, and suspicious pattern
+            recognition. Built for network security and forensic analysis.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+              class="tag">Regex</span><span class="tag">Cybersecurity</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="project-card" id="project-heart-disease">
+          <div class="project-category-badge">Machine Learning</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">Heart Disease Prediction</h3>
+          <p class="project-desc">Machine learning-based system that predicts the likelihood of heart disease in
+            patients based on medical attributes. Analyzes health parameters including age, blood pressure, cholesterol
+            levels, and heart rate using advanced classification algorithms.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span
+              class="tag">NumPy</span><span class="tag">Machine Learning</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="project-card project-card--accent" id="project-streamsphere">
+          <div class="project-category-badge">Web Application</div>
+          <div class="project-card-header">
+            <div class="project-code-icon accent-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title accent">StreamSphere</h3>
+          <p class="project-desc">Revolutionary streaming platform delivering customized entertainment experiences.
+            Features secure phone verification, personalized email recommendations, extensive premium content library,
+            and resume watching functionality across devices.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Node.js</span><span
+              class="tag">MongoDB</span><span class="tag">Payment Gateway</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="project-card" id="project-ai-chatbot">
+          <div class="project-category-badge">AI Application</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">AI Chatbot</h3>
+          <p class="project-desc">Interactive AI-powered chatbot with user authentication and registration system.
+            Features natural language processing, personalized responses, and a modern responsive UI built with HTML,
+            CSS, JavaScript, and Python backend.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span
+              class="tag">Python</span><span class="tag">SQLite</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="project-card" id="project-all-about-cars">
+          <div class="project-category-badge">Web Application</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">All About Cars</h3>
+          <p class="project-desc">Comprehensive web application providing detailed information about various car models,
+            specifications, and comparisons. Built with modern web technologies to deliver an engaging user experience
+            for automobile enthusiasts.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+              class="tag">React</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="project-card" id="project-insta-clone">
+          <div class="project-category-badge">Web Application</div>
+          <div class="project-card-header">
+            <div class="project-code-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <h3 class="project-title">Insta Clone</h3>
+          <p class="project-desc">Social media platform clone replicating Instagram's core features. Built with HTML and
+            modern web technologies to understand social media architecture and user interaction patterns.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/advaitkulkarni" target="_blank" class="btn-source"><i class="fab fa-github"></i>
+              Source Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EDUCATION ═══════════════════════════════ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education &amp; <span class="accent">Journey</span></h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card" id="edu-mca">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="edu-institution">Angadi Institute of Technology and Management</p>
+            <p class="edu-university">Visvesvaraya Technological University</p>
+            <p class="edu-years"><i class="far fa-calendar-alt"></i> 2023 – 2025</p>
+            <p class="edu-grade"><i class="fas fa-award"></i> 89.00%</p>
+          </div>
+        </div>
+        <div class="edu-card" id="edu-bca">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="edu-institution">Jain College of BBA BCA and Commerce</p>
+            <p class="edu-university">Rani Channamma University</p>
+            <p class="edu-years"><i class="far fa-calendar-alt"></i> 2020 – 2023</p>
+            <p class="edu-grade"><i class="fas fa-award"></i> 75.46%</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="journey-title">My Journey</h3>
+      <div class="timeline">
+
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-year">2025</p>
+            <h4 class="timeline-event">MCA Graduate</h4>
+            <p class="timeline-org">Angadi Institute of Technology and Management</p>
+            <p class="timeline-desc">Completed Master of Computer Applications with 89% marks. Specialized in advanced
+              software development, cybersecurity, and system architecture.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-year">2024 – 2025</p>
+            <h4 class="timeline-event">Internship — Software Development</h4>
+            <p class="timeline-org">IIIT Dharwad</p>
+            <p class="timeline-desc">Completed internship at Indian Institute of Information Technology, Dharwad. Gained
+              hands-on experience in software development, research projects, and collaborative programming.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-year">2023</p>
+            <h4 class="timeline-event">BCA Graduate &amp; MCA Enrolled</h4>
+            <p class="timeline-org">Jain College / AITM</p>
+            <p class="timeline-desc">Completed Bachelor of Computer Applications with 75.46% marks. Built strong
+              foundation in programming, databases, and web development, then immediately enrolled in MCA.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-year">2020</p>
+            <h4 class="timeline-event">Journey Begins</h4>
+            <p class="timeline-org">Academic Pursuit</p>
+            <p class="timeline-desc">Started journey in computer applications, discovering passion for coding and
+              technology problem-solving.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-underline"></div>
+        <p class="section-sub">Have a project in mind or just want to chat? Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-card" id="contact-email-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">advait.h.k.1234@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone-card">
+            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">+91 8431390017</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location-card">
+            <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Belgavi, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="send-message-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2025 <span class="accent">Advait Kulkarni</span>. Crafted with <span
+          class="heart">♥</span> and lots of ☕</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
