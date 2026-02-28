@@ -12,10 +12,9 @@ app.use(express.json());
 /* ================= MAIL ================= */
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: "smtp-relay.brevo.com",
   port: 587,
   secure: false,
-  requireTLS: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -43,7 +42,7 @@ app.post("/send-email", async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+      from: '"Advait Portfolio" <advaithk24@gmail.com>',
       to: process.env.EMAIL_USER,
       subject: `Portfolio Message from ${name}`,
       html: `
